@@ -1,0 +1,204 @@
+* {
+	color: white;
+	font-family: SimHei;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+
+#bottom-positioner {
+	position: fixed;
+	bottom: 20%;
+	left: 50%;
+}
+
+#info-bar {
+	opacity: 0;
+	border-radius: 50%;
+	background-color: gray;
+	width: 0px;
+	height: 0px;
+	position: relative;
+	top: 57px;
+	left: 60px;
+	overflow: hidden;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+}
+
+.info {
+	position: relative;
+	top: 15px;
+	left: 40px;
+	font-size: 15px;
+}
+
+#button {
+	width: 0;
+}
+
+#button:hover #info-bar{
+	opacity: 1;
+	width: 130px;
+	height: 130px;
+	top: 0;
+	left: 0;
+}
+
+.info li img {
+	vertical-align: middle;
+}
+
+.info span {
+	margin-left: 8px;
+}
+
+
+.comment {
+	font-size: 30px;
+	font-weight: bold;
+	position: relative;
+	left: -10px;
+	top: 5px;
+}
+
+.mine {
+	display: inline;
+	position: relative;
+	left: -18px;
+	top: 10px;
+}
+
+.mine span {
+	font-weight: bold;
+	color: #079E6E;
+}
+
+#control-ring {
+	position: relative;
+	top: 40px;
+	left: 40px;
+}
+
+.button {
+	opacity: 0;
+    width: 30px;
+	height: 30px;
+	background-size: 15px;
+	background-color: gray;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+
+#button:hover .button {
+	opacity: 1;
+}
+
+.button:hover {
+	background-color: #484343;
+}
+
+.mask {
+	background-image: url('images/nomask.png');
+}
+
+#button:hover .mask {
+	top: -44px;
+	left: -41px;
+}
+
+.history {
+	background-image: url('images/history.png');
+}
+
+#button:hover .history {
+	top: -8px;
+	left: -53px;
+}
+
+.message {
+	background-image: url('images/message.png');
+}
+
+#button:hover .message {
+	top: 28px;
+	left: -33px;
+}
+
+.unread {
+	background-color: red;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	font-size: 4px;
+	font-weight: bold;
+	position: absolute;
+	top: -3px;
+	right: 0;
+	text-align: center;
+}
+
+.setting {
+	background-image: url('images/setting.png');
+}
+
+#button:hover .setting {
+	top: 51px;
+	left: 2px;
+}
+
+.sign {
+	background-image: url('images/signout.png');
+}
+
+#button:hover .sign {
+	top: 43px;
+	left: 44px;
+}
+
+ .apb {
+	height: 120px;
+	width: 120px;
+}
+
+.icon {
+	background-image: url('images/atplus_white.png');
+	background-color: #7D82BF;
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	top: 23px;
+	left: 54px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+
+#button:hover .icon {
+	background-image: url('images/atplus_green.png');
+	background-color: rgba(48, 63, 159, 1);
+	background-size: 50px;
+	height: 60px;
+	width: 60px;
+	top: 10px;
+	left: 40px;
+}
